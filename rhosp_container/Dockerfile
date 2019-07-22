@@ -9,14 +9,14 @@ LABEL name="scality/swift-scality-backend" \
 
 COPY LICENSE /licenses/LICENSE.txt
 
-ADD https://github.com/scality/ScalitySproxydSwift/archive/swift-scality-backend-0.4.4.tar.gz /tmp/
+#ADD https://github.com/scality/ScalitySproxydSwift/archive/swift-scality-backend-0.4.4.tar.gz /tmp/
 
-USER root
+#USER root
 
-RUN cd /tmp \
+#RUN cd /tmp \
   && tar xzf swift-scality-backend-0.4.4.tar.gz \
   && cd ScalitySproxydSwift-swift-scality-backend-0.4.4 \
   && python setup.py install
 
-USER stack
+#USER stack
 
