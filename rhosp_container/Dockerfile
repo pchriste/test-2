@@ -14,9 +14,9 @@ COPY LICENSE /licenses/LICENSE.txt
 #USER root
 
 #RUN cd /tmp \
-  && tar xzf swift-scality-backend-0.4.4.tar.gz \
-  && cd ScalitySproxydSwift-swift-scality-backend-0.4.4 \
-  && python setup.py install
+ # && tar xzf swift-scality-backend-0.4.4.tar.gz \
+ # && cd ScalitySproxydSwift-swift-scality-backend-0.4.4 \
+ # && python setup.py install
 
 #USER stack
 
